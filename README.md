@@ -1,5 +1,20 @@
-# Star Wars Autocomplete
+# STAR WARS AUTOCOMPLETE
 
-## Course
+|[DOCUMENTATION](https://redux.js.org/ "Redux's Docs")       |
+| ------------- |
 
-This project was built to teach the [State Managment in Redux & MobX Course](https://frontendmasters.com/courses/redux-mobx/) for Frontend Masters.
+> A Fast and scalable App made with Redux 
+> which will serve as a boilerplate for future Redux-based apps 
+
+  * Includes Redux Toolkit to kickstart Redux app
+  * React and Redux connected via react-redux
+  * Follows industry best practices and recommended patterns
+
+
+
+
+
+
+
+![alt text](https://github.com/varunswarup0/star-wars-autocomplete/blob/master/StarWarsCharacters.png)
+
