@@ -9,11 +9,16 @@ import reducer from './reducer';
 import FetchCharacters from './FetchCharacters';
 import Characters from './Characters';
 
-// import { createEpicMiddleware } from 'redux-observable';
+import { createEpicMiddleware } from 'redux-observable';
+import rootEpic from './fetch-character-epic';
 
 import './styles.scss';
 
-const store = createStore(reducer);
+const epicMiddleware = createEpicMiddleware();
+
+const store = createStore(reducer, applyMiddleware(epicMiddleware));
+
+epicMiddleware.run(rootEpic);
 
 const Application = () => {
   return (

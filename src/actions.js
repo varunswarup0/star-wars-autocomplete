@@ -1,5 +1,3 @@
-import { search } from './api';
-
 export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
 export const FETCH_CHARACTERS_FULFILLED = 'FETCH_CHARACTERS_FULFILLED';
 
