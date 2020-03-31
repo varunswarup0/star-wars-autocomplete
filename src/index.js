@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
 import reducer from './reducer';
 
 import FetchCharacters from './FetchCharacters';
 import Characters from './Characters';
+
+// import { createEpicMiddleware } from 'redux-observable';
 
 import './styles.scss';
 
