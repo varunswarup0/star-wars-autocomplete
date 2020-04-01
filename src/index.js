@@ -23,7 +23,21 @@ epicMiddleware.run(rootEpic);
 const Application = () => {
   return (
     <div className="Application">
-      <h1>Star Wars Autocomplete</h1>
+      <div class="starwars-demo">
+        <img
+          src="//cssanimation.rocks/demo/starwars/images/star.svg"
+          alt="Star"
+          class="star"
+        />
+        <img
+          src="//cssanimation.rocks/demo/starwars/images/wars.svg"
+          alt="Wars"
+          class="wars"
+        />
+        <h2 class="byline" id="byline">
+          Autocomplete
+        </h2>
+      </div>
       <FetchCharacters />
       <Characters />
     </div>

@@ -1,7 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400, 700');
 $button-color: rgb(28, 209, 83);
 $danger-color: #f0544f;
 $control-color: #c79528;
 $font-color: #28283d;
+
+a {
+  width: 15em;
+  margin: 0 0 0 7.5;
+  font-size: 200%;
+  font-weight: 400;
+  color: rgb(75, 213, 238);
+  opacity: 1;
+  text-decoration: none;
+  font: 700 1em 'News Cycle', sans-serif;
+}
+
+/* Keyframes */
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes wars {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(0.5em);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes spin-letters {
+  0%,
+  10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%,
+  86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-byline {
+  0% {
+    transform: translateZ(5em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+/* Make the 3D work on the container */
+.starwars-demo {
+  perspective: 800px;
+  transform-style: preserve3d;
+}
+
+/* General styles and layout */
+body {
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+}
+
+.starwars-demo {
+  height: 17em;
+  left: 50%;
+  position: fixed;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 34em;
+}
+
+// .byline span {
+//   display: inline-block;
+// }
+
+img {
+  width: 50%;
+}
+
+// .star,
+// .wars,
+// .byline {
+//   position: absolute;
+// }
+
+// .star {
+//   top: -0.75em;
+// }
+
+// .wars {
+//   bottom: 0em;
+// }
+
+.byline {
+  color: #fff;
+  font-family: 'ITC Serif Gothic', Lato;
+  font-size: 2.25em;
+  left: -2em;
+  letter-spacing: 0.4em;
+  right: -2em;
+  text-align: center;
+  text-transform: uppercase;
+  top: 29%;
+}
 
 @mixin input-style($color) {
   background-color: $color;
