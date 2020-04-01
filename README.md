@@ -16,5 +16,5 @@
 
 
 
-![alt text](https://github.com/varunswarup0/star-wars-autocomplete/blob/master/StarWarsCharacters.png)
+![alt text](https://github.com/varunswarup0/star-wars-autocomplete/blob/master/starWarsAutocomplete.png)
 
