@@ -23,7 +23,16 @@ epicMiddleware.run(rootEpic);
 const Application = () => {
   return (
     <div className="Application">
-      <h1>Star Wars Autocomplete</h1>
+      <div class="stars"></div>
+      <div className="titleContainer">
+        <div class="logo"></div>
+        <div className="autoComplete">
+          {' '}
+          A long time ago, in a galaxy far,
+          <br /> far away....
+        </div>
+      </div>
+      {/* <h1>Star Wars Autocomplete</h1> */}
       <FetchCharacters />
       <Characters />
     </div>
