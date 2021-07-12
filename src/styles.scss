@@ -10,8 +10,12 @@ $font-color: #28283d;
   outline: none;
   padding: 1em;
   width: 100%;
+  color: white;
+  background-color: black;
   &:focus {
-    background-color: lighten($color, 2%);
+    // background-color: lighten($color, 2%);
+    color: white;
+    background-color: black;
   }
 }
 
@@ -137,7 +141,7 @@ body {
   height: 10vh;
   width: 15vh;
   display: flex;
-  margin: 0 26.5vh;
+  margin: 0 30.5vh;
   justify-content: center;
   text-align: center;
   // visibility: hidden;

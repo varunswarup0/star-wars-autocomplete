@@ -28,8 +28,8 @@ const Application = () => {
         <div class="logo"></div>
         <div className="autoComplete">
           {' '}
-          A long time ago, in a galaxy far,
-          <br /> far away....
+          {/* A long time ago, in a galaxy far,
+          <br /> far away.... */}
         </div>
       </div>
       {/* <h1>Star Wars Autocomplete</h1> */}
